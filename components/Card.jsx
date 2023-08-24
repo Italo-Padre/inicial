@@ -1,15 +1,12 @@
 import React from 'react'
 import { StatusBar, StyleSheet, Text, View } from 'react-native'
 
-const Card = () => {
+const Card = (props) => {
   return (
     <>
      <View style={styles.card} >
-      <Text style={styles.titulo}>Hello Word!!</Text>
-      <Text style={styles.tituloSecundario} >Hello Word!!</Text>
-      <Text >Hello Word!!</Text>
-      <Text style={styles.tituloSecundario} >Hello Word!!</Text>
-      <StatusBar style="auto" />
+      <Text style={styles.titulo}>{props.titulo}</Text>
+      {props.children}
     </View>
     </>
   )
