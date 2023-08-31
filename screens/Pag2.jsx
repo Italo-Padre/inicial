@@ -2,12 +2,14 @@ import React from 'react'
 import { Avatar, Button, Card, Text } from 'react-native-paper'
 
 
-const Pag2 = () => {
+const Pag2 = ({navigation}) => {
     
     const LeftContent = props => <Avatar.Icon {...props} icon="folder" />
     
     return (
         <>
+        <Button title='Pagina 1' onPress={()=>navigation.navigate('Pagina1')}>Pagina 1</Button>
+        <Button title='Pagina 3' onPress={()=>navigation.navigate('Pagina3')}>Pagina 3</Button>
             <Card>
                 <Card.Title title="Card Title" subtitle="Card Subtitle" left={LeftContent} />
                 <Card.Content>
